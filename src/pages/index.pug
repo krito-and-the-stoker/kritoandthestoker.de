@@ -2,6 +2,16 @@ doctype html
 html(lang='de')
 	head
 		title Krito and the Stoker
+		link(
+			rel='stylesheet'
+			href='/style.css')
 	body
-		h1 Hello World
-		p Hier steht auch noch Text!
+		h1 Krito and the Stoker
+		.content
+			include:markdown-it ../content/about.md
+
+			.flex
+				.half
+					include:markdown-it ../content/krito.md
+				.half
+					include:markdown-it ../content/heizer.md

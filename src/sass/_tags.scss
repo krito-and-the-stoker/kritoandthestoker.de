@@ -1,0 +1,15 @@
+
+body {
+	background-color: map-get($color, background);
+	color: map-get($color, text);
+	font-family: Helvetica;
+}
+
+a, a:visited {
+	color: map-get($color, text);
+	text-decoration: none;
+	font-weight: bold;
+	&:hover {
+		color: map-get($color, primary-1)
+	}
+}

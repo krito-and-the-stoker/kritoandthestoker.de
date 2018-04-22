@@ -1,0 +1,15 @@
+
+.content {
+	width: 90vw;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.half {
+	width: calc(50% - 30px);
+	margin: 0 15px;
+}
