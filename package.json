@@ -1,0 +1,10 @@
+{
+  "name": "kritoandthestoker.de",
+  "version": "1.0.0",
+  "description": "Coroprate Website",
+  "main": "index.js",
+  "repository": "git@github.com:krito-and-the-stoker/kritoandthestoker.de.git",
+  "author": "Krito and the Stoker GbR",
+  "license": "MIT",
+  "private": false
+}
