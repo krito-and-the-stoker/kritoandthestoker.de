@@ -7,9 +7,12 @@
 
 .flex {
 	display: flex;
+	margin: 0;
+	margin-left: -$flex-margin;
+	margin-right: -$flex-margin;
 }
 
 .half {
-	width: calc(50% - 30px);
-	margin: 0 15px;
+	width: calc(50% - #{2*$flex-margin});
+	margin: 0 $flex-margin;
 }
