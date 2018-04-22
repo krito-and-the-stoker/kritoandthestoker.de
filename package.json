@@ -6,5 +6,17 @@
   "repository": "git@github.com:krito-and-the-stoker/kritoandthestoker.de.git",
   "author": "Krito and the Stoker GbR",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "markdown": "^0.5.0",
+    "mz": "^2.7.0"
+  }
 }
