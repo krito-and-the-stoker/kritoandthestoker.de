@@ -17,6 +17,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.1",
     "jstransformer-markdown-it": "^2.0.0",
+    "markdown-it-link-attributes": "^2.1.0",
     "mz": "^2.7.0"
   }
 }

@@ -33,6 +33,7 @@ npm manifest:
       "gulp-pug": "^4.0.1",
       "gulp-sass": "^4.0.1",
       "jstransformer-markdown-it": "^2.0.0",
+      "markdown-it-link-attributes": "^2.1.0",
       "mz": "^2.7.0"
     }
   }
@@ -2225,6 +2226,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
     dependencies:
       object-visit "^1.0.0"
+  
+  markdown-it-link-attributes@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-2.1.0.tgz#32a74c94f7c5cdfd08868d2bee29c6fa70a08324"
   
   markdown-it@^8.0.0:
     version "8.4.1"

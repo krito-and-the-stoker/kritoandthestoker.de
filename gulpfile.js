@@ -2,11 +2,25 @@ const gulp = require('gulp')
 const pug = require('gulp-pug')
 const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create()
+const md = require('markdown-it')()
+var mila = require('markdown-it-link-attributes')
 
-
+md.use(mila, {
+  attrs: {
+    target: '_blank',
+    rel: 'noopener'
+  }
+})
+ 
 gulp.task('pug', () => {
 	return gulp.src('src/pages/**/*.pug')
-		.pipe(pug())
+		.pipe(pug({
+			filters: {
+				markdown: (input) => {
+					return md.render(input)
+				}
+			}
+		}))
 		.pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
