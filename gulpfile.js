@@ -3,7 +3,9 @@ const pug = require('gulp-pug')
 const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create()
 const md = require('markdown-it')()
-var mila = require('markdown-it-link-attributes')
+const mila = require('markdown-it-link-attributes')
+const webpack = require('webpack')
+const path = require('path')
 
 md.use(mila, {
   attrs: {
@@ -12,6 +14,25 @@ md.use(mila, {
   }
 })
 
+const config = {
+    entry: './main.js',
+    output: {
+        filename: './bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    context: path.resolve(__dirname, 'src/js/')
+}
+
+gulp.task('js', () => {
+  return new Promise(resolve => webpack(config, (err, stats) => {
+    if (err) {
+			console.log('Webpack', err)    	
+    } 
+
+    console.log(stats.toString({ /* stats options */ }))
+    resolve()
+  }))
+})
 
 function swallowError (error) {
   console.log(error.toString())
@@ -55,10 +76,11 @@ gulp.task('serve', () => {
   })
 })
 
-gulp.task('build', ['pug', 'sass', 'static'])
+gulp.task('build', ['pug', 'js', 'sass', 'static'])
 
 gulp.task('watch', ['serve'], () => {
 	gulp.watch('src/pages/**/*.pug', ['pug'])
+	gulp.watch('src/js/**/*.js', ['js'])
 	gulp.watch('src/content/**/*.md', ['pug'])
 	gulp.watch('src/sass/**/*.scss', ['sass'])
 	gulp.watch('src/static/**/*', ['static'])
