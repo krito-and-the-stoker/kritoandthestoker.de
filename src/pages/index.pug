@@ -6,13 +6,26 @@ html(lang='de')
 			rel='stylesheet'
 			href='/style.css')
 	body
-		h1 Krito and the Stoker
+		header
+			h1 Krito and the Stoker
+			nav
+				ul
+					li
+						a(href="#about") Wer wir sind
+					li
+						a(href="#team") Das Team
+					li
+						a(href="#projects") Projekte
+					li
+						a(href="#contact") Kontakt
+					li
+						a(href="#imprint") Impressum
 		
 		.content
-			section
+			section#about
 				include:markdown ../content/about.md
 
-			section
+			section#team
 				h2 Das Team
 				.flex
 					.half
@@ -20,7 +33,7 @@ html(lang='de')
 					.half
 						include:markdown ../content/heizer.md
 
-			section
+			section#projects
 				h2 Die Projekte
 				.flex
 					.half
@@ -28,7 +41,7 @@ html(lang='de')
 					.half
 						include:markdown ../content/colonization.md
 
-			section
+			section#contact
 				include:markdown ../content/contact.md
-			section
+			section#imprint
 				include:markdown ../content/imprint.md

@@ -18,5 +18,11 @@
 }
 
 .primary-1 {
-	color: map-get($color, primary-1)
+	color: map-get($color, primary-1);
+}
+.primary-2 {
+	color: map-get($color, primary-2);
+}
+.primary-3 {
+	color: map-get($color, primary-3);
 }
