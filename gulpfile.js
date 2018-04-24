@@ -12,6 +12,13 @@ md.use(mila, {
   }
 })
 
+
+function swallowError (error) {
+  console.log(error.toString())
+  this.emit('end')
+}
+
+
 gulp.task('static', () => {
 	return gulp.src('src/static/**/*')
 		.pipe(gulp.dest('dist'))
@@ -25,7 +32,7 @@ gulp.task('pug', () => {
 					return md.render(input)
 				}
 			}
-		}))
+		})).on('error', swallowError)
 		.pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
@@ -34,7 +41,7 @@ gulp.task('pug', () => {
 
 gulp.task('sass', () => {
 	return gulp.src('src/sass/**/*.scss')
-		.pipe(sass())
+		.pipe(sass()).on('error', swallowError)
 		.pipe(gulp.dest('dist'))
 		.pipe(browserSync.stream())
 })
