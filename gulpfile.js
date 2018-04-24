@@ -2,10 +2,11 @@ const gulp = require('gulp')
 const pug = require('gulp-pug')
 const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create()
-const md = require('markdown-it')()
+const md = require('markdown-it')({ html: true })
 const mila = require('markdown-it-link-attributes')
 const webpack = require('webpack')
 const path = require('path')
+const yargs = require('yargs')
 
 md.use(mila, {
   attrs: {
@@ -15,12 +16,13 @@ md.use(mila, {
 })
 
 const config = {
-    entry: './main.js',
-    output: {
-        filename: './bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    },
-    context: path.resolve(__dirname, 'src/js/')
+	mode: yargs.argv.production ? 'production' : 'development',
+  entry: './main.js',
+  output: {
+    filename: './bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  context: path.resolve(__dirname, 'src/js/')
 }
 
 gulp.task('js', () => {

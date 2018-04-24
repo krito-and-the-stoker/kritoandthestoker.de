@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "gulp build --require babel-register",
+    "build": "gulp build --require babel-register --production",
     "dev": "gulp --require babel-register"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "mz": "^2.7.0",
     "webpack": "^4.6.0",
     "webpack-dev-middleware": "^3.1.2",
-    "webpack-hot-middleware": "^2.22.1"
+    "webpack-hot-middleware": "^2.22.1",
+    "yargs": "^11.0.0"
   }
 }
