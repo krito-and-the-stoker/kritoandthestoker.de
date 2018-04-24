@@ -11,6 +11,11 @@ md.use(mila, {
     rel: 'noopener'
   }
 })
+
+gulp.task('static', () => {
+	return gulp.src('src/static/**/*')
+		.pipe(gulp.dest('dist'))
+})
  
 gulp.task('pug', () => {
 	return gulp.src('src/pages/**/*.pug')
@@ -43,12 +48,13 @@ gulp.task('serve', () => {
   })
 })
 
-gulp.task('build', ['pug', 'sass'])
+gulp.task('build', ['pug', 'sass', 'static'])
 
 gulp.task('watch', ['serve'], () => {
 	gulp.watch('src/pages/**/*.pug', ['pug'])
 	gulp.watch('src/content/**/*.md', ['pug'])
 	gulp.watch('src/sass/**/*.scss', ['sass'])
+	gulp.watch('src/static/**/*', ['static'])
 })
 
 gulp.task('default', ['build', 'watch'])

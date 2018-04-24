@@ -13,3 +13,7 @@ a, a:visited {
 		color: map-get($color, primary-1)
 	}
 }
+
+img {
+	max-width: 100%;
+}
