@@ -2,13 +2,13 @@
 body {
 	background-color: map-get($color, background);
 	color: map-get($color, text);
-	font-family: Helvetica;
+	font-family: Courier New, Courier, monospace;
 }
 
 a, a:visited {
 	color: map-get($color, text);
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 100;
 	&:hover {
 		color: map-get($color, primary-1)
 	}
