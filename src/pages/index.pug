@@ -9,53 +9,26 @@ html(lang='de')
 		h1 Krito and the Stoker
 		
 		.content
-			include:markdown ../content/about.md
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			h2 Das Team
-			.flex
-				.half
-					include:markdown ../content/krito.md
-				.half
-					include:markdown ../content/heizer.md
+			section
+				include:markdown ../content/about.md
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			h2 Die Projekte
-			.flex
-				.half
-					include:markdown ../content/achtung-kurve.md
-				.half
-					include:markdown ../content/colonization.md
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>		
-			h2 Kontakt
+			section
+				h2 Das Team
+				.flex
+					.half
+						include:markdown ../content/krito.md
+					.half
+						include:markdown ../content/heizer.md
+
+			section
+				h2 Die Projekte
+				.flex
+					.half
+						include:markdown ../content/achtung-kurve.md
+					.half
+						include:markdown ../content/colonization.md
+
+			section
 				include:markdown ../content/contact.md
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			h2 Impressum
+			section
 				include:markdown ../content/imprint.md
