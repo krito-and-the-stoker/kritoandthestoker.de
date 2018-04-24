@@ -2,7 +2,20 @@
 body {
 	background-color: map-get($color, background);
 	color: map-get($color, text);
+	font-family: Tahoma;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	font-family: Courier New, Courier, monospace;
+}
+
+h5 {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: normal;
+	margin-bottom: 0;
+  font-style: italic;
+  font-family: tahoma;
 }
 
 a, a:visited {
@@ -15,7 +28,7 @@ a, a:visited {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 }
 
 section {
