@@ -1,4 +1,4 @@
-import init3js from './3d.js'
+import heizer from './heizer.js'
 
 const toArray = nl => Array.prototype.slice.call(nl)
 
@@ -14,4 +14,4 @@ const initializeNav = () => {
 }
 
 initializeNav();
-init3js();
+heizer();
