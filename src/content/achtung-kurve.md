@@ -1,2 +1,7 @@
-Achtung Kurve yeah
-<http://achtungkurve.net>
+## Achtung Kurve
+
+![Achtung Kurve](/achtung-kurve.png)
+
+Diese Neuauflage des alten Klassikers *Achtung, die Kurve!* ist ein kleines Nebenprojekt von uns und in erster Linie entstanden, weil wir nicht in der Lage waren, eine aktuelle Version des Spiels zu finden, das sich praktikabel installieren lässt und den Charme der Originalversion behalten hat. Deswegen haben wir eine Multiplayer-an-einem-Coputer-Onlineversion erstellt, die man sofort und am besten mit mehreren an einem Computer spielen kann. Ist wirklich unkonpliziert!
+
+Sofort spielen: <http://achtungkurve.net>

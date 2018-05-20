@@ -3,6 +3,12 @@ body {
 	background-color: map-get($color, background);
 	color: map-get($color, text);
 	font-family: Tahoma;
+	font-size: 18px;
+	line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {

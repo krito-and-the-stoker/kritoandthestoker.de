@@ -1,6 +1,6 @@
 ## Impressum
 
-#### Impressum nach paragraph 5!
+#### Impressum nach §5 TMG
 
 	Krito and the Stoker GbR
 	Christoph Franke

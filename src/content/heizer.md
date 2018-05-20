@@ -4,6 +4,10 @@
 ![Heizer](/heizer.png)
 
 ##### 3D Grafiker & Designer
-Er ist auch übertrieben lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor luptua. ipsum dolor sit amet.
+Das ist der Heizer. Er beheizt die Grafikkarte mit 2D und 3D **Grafiken**. Ohne ihn hätten wir nur langweilige Tabellen. Er füllt unsere Spiele mit Leben. Mit viel Liebe zum Detail baut er ganze Welten auf, in denen man sich gerne verliert.
 
-<http://fabiankampa.de>
+Aber er ist auch ein Experte für **Performance** und kennt seine Grafikkarte sehr genau. Deswegen berät er zusammen mit Krito, wie man die schöne Optik auch auf älteren oder mobilen Geräten umsetzen kann.
+
+Er hält ebenfalls 50% der Aktien und ist als Ideengeber genauso unersetzlich!
+
+Und das ist sei Portfolio: <http://fabiankampa.de>

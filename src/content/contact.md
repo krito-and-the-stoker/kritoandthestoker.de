@@ -1,5 +1,5 @@
 ## Kontakt
 
-Kontaktiere uns gerne!
+Wir sind immer neugierug, wer so auf unserer Seite landet!
 
-Hier ein bisshcne text zum Kontakt
+Schreib uns doch einfach an <hallo@kritoandthestoker.de>
