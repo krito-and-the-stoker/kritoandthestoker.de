@@ -4637,6 +4637,10 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
+three@^0.92.0:
+  version "0.92.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.92.0.tgz#8d3d1f5af890e62da7f4cb45d20c09fa51057dcd"
+
 through2@^0.6.1:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"

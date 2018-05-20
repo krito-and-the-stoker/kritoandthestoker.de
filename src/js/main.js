@@ -1,3 +1,5 @@
+import init3js from './3d.js'
+
 const toArray = nl => Array.prototype.slice.call(nl)
 
 const initializeNav = () => {
@@ -11,6 +13,5 @@ const initializeNav = () => {
 	})
 }
 
-
-
 initializeNav();
+init3js();
