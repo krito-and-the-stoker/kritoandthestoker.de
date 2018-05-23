@@ -1,10 +1,10 @@
 import * as THREE from 'three'
 
 const skyColor = 0xdde8fd
-const groundColor = 0x949baa
-const hemisPhereIntensity = 1.9
+const groundColor = 0xd1daed
+const hemisPhereIntensity = 2.1
 const directionalColor = 0xfdf4dd
-const directionalIntensity = 1.2
+const directionalIntensity = .5
 const directionalLightPosition = {
   x: 5,
   y: 1,
@@ -24,7 +24,7 @@ const createBootSzene = async () => {
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
     aoMap: bootSzeneAO,
-    roughness: 1,
+    roughness: 0.8,
     aoMapIntensity: 0.0,
   })
   scene.children.forEach(mesh => {
@@ -57,10 +57,11 @@ export default async () => {
 
   let initialZ = 9.682811196058351
 
-  camera.position.x = 8.146366342379562
-  camera.position.y = 3.227381223127345
-  camera.position.z = initialZ
+  camera.position.x = 12  
+  camera.position.y = 4
+  camera.position.z = 12
   camera.rotation.y += .8
+
 
   const captureCamera = (e) => {
     // allow horizontal angles
@@ -78,7 +79,7 @@ export default async () => {
 
   document.addEventListener('scroll', (e) => {
     const alpha = 0.01
-    camera.position.z = initialZ - alpha*window.scrollY
+    //camera.position.z = initialZ - alpha*window.scrollY
   })
 
 
