@@ -10,9 +10,6 @@ const directionalLightPosition = {
   y: 1,
   z: 1,
 }
-const materialRoughness = 5
-
-const aspectRation = 2
 
 
 const createBootSzene = async () => {
@@ -27,7 +24,8 @@ const createBootSzene = async () => {
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
     aoMap: bootSzeneAO,
-    roughness: materialRoughness,
+    roughness: 5,
+    aoMapIntensity: .5,
   })
   scene.children.forEach(mesh => {
     mesh.material = material
