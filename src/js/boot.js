@@ -1,9 +1,9 @@
 import * as THREE from 'three'
 
-const skyColor = 0xffffff
-const groundColor = 0x000000
+const skyColor = 0xc5e83b0
+const groundColor = 0x3c4652
 const hemisPhereIntensity = 1
-const directionalColor = 0xffffff
+const directionalColor = 0xfffef4
 const directionalIntensity = 0.5
 
 
