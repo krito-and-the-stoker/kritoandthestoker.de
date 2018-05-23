@@ -1,4 +1,4 @@
-import heizer from './heizer.js'
+import boot from './boot.js'
 
 const toArray = nl => Array.prototype.slice.call(nl)
 
@@ -14,4 +14,4 @@ const initializeNav = () => {
 }
 
 initializeNav();
-heizer();
+boot();

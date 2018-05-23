@@ -10,13 +10,13 @@ const directionalIntensity = 0.5
 const createBootSzene = async () => {
   const scene = await new Promise(resolve => {
     const loader = new THREE.ObjectLoader()
-    loader.load(`/bootSzene.json`, scene => {
+    loader.load(`/assets3d/bootSzene.json`, scene => {
       resolve(scene)
     })
   })
   console.log(scene)
-  const bootSzeneTexture = new THREE.TextureLoader().load('/schiffDiffuseMap.png')
-  const bootSzeneAO = new THREE.TextureLoader().load('/SchiffSzeneAO.png')
+  const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/schiffDiffuseMap.png')
+  const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzeneAO.png')
   const material = new THREE.MeshStandardMaterial({ map: bootSzeneTexture, aoMap: bootSzeneAO })
   scene.children.forEach(mesh => {
     mesh.material = material
@@ -39,7 +39,7 @@ export default async () => {
 
   const renderer = new THREE.WebGLRenderer({ alpha: true })
   renderer.setSize( window.innerWidth, window.innerHeight )
-  document.body.appendChild( renderer.domElement )
+  document.body.querySelector('#boot').appendChild( renderer.domElement )
 
   const [scene, mixer] = await createBootSzene()
 
