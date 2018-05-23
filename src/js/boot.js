@@ -10,6 +10,7 @@ const directionalLightPosition = {
   y: 1,
   z: 1,
 }
+const materialRoughness = 5
 
 const aspectRation = 2
 
@@ -25,7 +26,8 @@ const createBootSzene = async () => {
   const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzeneAO.png')
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
-    aoMap: bootSzeneAO
+    aoMap: bootSzeneAO,
+    roughness: materialRoughness,
   })
   scene.children.forEach(mesh => {
     mesh.material = material
