@@ -5,6 +5,11 @@ const groundColor = 0x3c4652
 const hemisPhereIntensity = 1
 const directionalColor = 0xfffef4
 const directionalIntensity = 0.5
+const directionalLightPosition = {
+  x: 1,
+  y: 1,
+  z: 1,
+}
 
 const aspectRation = 2
 
@@ -24,6 +29,9 @@ const createBootSzene = async () => {
   })
   const hemisphereLight = new THREE.HemisphereLight(skyColor, groundColor, hemisPhereIntensity)
   const directionalLight = new THREE.DirectionalLight(directionalColor, directionalIntensity)
+  directionalLight.position.x = directionalLightPosition.x
+  directionalLight.position.y = directionalLightPosition.y
+  directionalLight.position.z = directionalLightPosition.z
   scene.add(hemisphereLight)
   scene.add(directionalLight)
 
