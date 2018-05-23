@@ -1,80 +1,48 @@
 import * as THREE from 'three'
 
-const createHeizer = async () => {
-  const geometry = await new Promise(resolve => {
-    const loader = new THREE.JSONLoader()
-    loader.load(`/heizer.json`, geometry => {
-      resolve(geometry)
-    })
-  })
-  const heizerTexture = new THREE.TextureLoader().load(`/HeizerKoerperCompleteMap.png`)
-  const material = new THREE.MeshBasicMaterial({ map: heizerTexture })
+const skyColor = 0xffffff
+const groundColor = 0x000000
+const hemisPhereIntensity = 1
+const directionalColor = 0xffffff
+const directionalIntensity = 0.5
 
-  return new THREE.Mesh( geometry, material )
-}
 
-const createBoot = async () => {
-  const obj = await new Promise(resolve => {
+const createBootSzene = async () => {
+  const scene = await new Promise(resolve => {
     const loader = new THREE.ObjectLoader()
-    loader.load(`/bootMitSzene.json`, obj => {
-      resolve(obj)
+    loader.load(`/bootSzene.json`, scene => {
+      resolve(scene)
     })
   })
-  const boot = obj.children[0]
-  const bootTexture = new THREE.TextureLoader().load('/SchiffCompleteMap.png')
-  boot.material = new THREE.MeshBasicMaterial({ map: bootTexture })
-  return [boot, obj.animations[0]]
-  // const bootTexture = new THREE.TextureLoader().load(`/SchiffCompleteMap.png`)
-  // const material = new THREE.MeshBasicMaterial({ map: bootTexture })
-  // return new THREE.Mesh( geometry, material )
-}
+  console.log(scene)
+  const bootSzeneTexture = new THREE.TextureLoader().load('/schiffDiffuseMap.png')
+  const bootSzeneAO = new THREE.TextureLoader().load('/SchiffSzeneAO.png')
+  const material = new THREE.MeshStandardMaterial({ map: bootSzeneTexture, aoMap: bootSzeneAO })
+  scene.children.forEach(mesh => {
+    mesh.material = material
+  })
+  const hemisphereLight = new THREE.HemisphereLight( skyColor, groundColor, hemisPhereIntensity );
+  const directionalLight = new THREE.DirectionalLight( directionalColor, directionalIntensity );
+  scene.add( hemisphereLight );
+  scene.add( directionalLight );
 
-const createAnimations = (scene) => {
-  // Create an AnimationMixer, and get the list of AnimationClip instances
   const mixer = new THREE.AnimationMixer( scene )
   const action = mixer.clipAction( scene.animations[0] )
   action.play()
 
-  return mixer
-}
-
-const createBootSzene = async () => {
-  const obj = await new Promise(resolve => {
-    const loader = new THREE.ObjectLoader()
-    loader.load(`/bootSzene.json`, obj => {
-      resolve(obj)
-    })
-  })
-  console.log(obj)
-  const bootSzeneTexture = new THREE.TextureLoader().load('/schiffDiffuseMap.png')
-  const material = new THREE.MeshBasicMaterial({ map: bootSzeneTexture })
-  obj.children.forEach(mesh => {
-    mesh.material = material
-  })
-
-  return obj
-  // const boot = obj.children[0]
-  // return [boot, obj.animations[0]]
+  return [scene, mixer]
 }
 
 
 export default async () => {
-  // const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 )
 
-  const renderer = new THREE.WebGLRenderer()
+  const renderer = new THREE.WebGLRenderer({ alpha: true })
   renderer.setSize( window.innerWidth, window.innerHeight )
   document.body.appendChild( renderer.domElement )
 
-  const heizer = await createHeizer()
-  // const [boot, clip] = await createBoot()
-  const scene = await createBootSzene()
-  scene.add(heizer)
-  const mixer = createAnimations(scene)
-  // scene.add( boot )
-  // scene.add( heizer )
+  const [scene, mixer] = await createBootSzene()
 
-  // camera.position.z = 5
   camera.position.x = 8.146366342379562
   camera.position.y = 3.227381223127345
   camera.position.z = 9.682811196058351
@@ -92,14 +60,6 @@ export default async () => {
     document.removeEventListener('mousemove', captureCamera)
   })
 
-  document.addEventListener('mousewheel', (e) => {
-    if(window.scrollY + window.innerHeight >= document.body.clientHeight) {
-      e.preventDefault()
-
-      const alpha = 0.001
-      camera.translateZ(alpha*e.deltaY)
-    }
-  })
 
   let deltaSeconds = 0
   let lastTime = 0
