@@ -23,7 +23,10 @@ const createBootSzene = async () => {
   })
   const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/schiffDiffuseMap.png')
   const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzeneAO.png')
-  const material = new THREE.MeshStandardMaterial({ map: bootSzeneTexture, aoMap: bootSzeneAO })
+  const material = new THREE.MeshStandardMaterial({
+    map: bootSzeneTexture,
+    aoMap: bootSzeneAO
+  })
   scene.children.forEach(mesh => {
     mesh.material = material
   })
