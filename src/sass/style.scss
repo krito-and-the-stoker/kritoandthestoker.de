@@ -7,3 +7,12 @@
 
 // specific
 @import './header';
+
+
+#boot {
+	min-height: 50vw;
+	position: relative;
+	canvas {
+		position: absolute;
+	}
+}
