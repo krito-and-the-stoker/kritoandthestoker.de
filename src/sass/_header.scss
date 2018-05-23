@@ -6,14 +6,14 @@ header {
 	}
 
 	h1 {
-		transition: opacity .3s;
+		transition: opacity .7s;
 		left: 40px;
 	}
 
 	nav {
 		right: 40px;
 		z-index: 1000;
-		transition: background-color 1s;
+		transition: background-color .7s;
 		&.background {
 			background-color: map-get($color, background);
 		}
