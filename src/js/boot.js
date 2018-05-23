@@ -60,7 +60,7 @@ export default async () => {
   camera.position.x = 12  
   camera.position.y = 4
   camera.position.z = 12
-  camera.rotation.y += .8
+  camera.rotation.y += .9
 
 
   const captureCamera = (e) => {
