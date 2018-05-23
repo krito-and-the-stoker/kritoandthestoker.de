@@ -1,5 +1,5 @@
 ## Kontakt
 
-Wir sind immer neugierig, wer so auf unserer Seite landet und freuen uns über neue Bekanntschaften!
+Wir sind immer neugierig, wer so auf unserer Seite landet und freuen uns über neue Kontakte!
 
-Schreib uns doch einfach an <hallo@kritoandthestoker.de>
+E-Mail: <hallo@kritoandthestoker.de>

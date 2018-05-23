@@ -8,12 +8,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "gulp build --require babel-register --production",
-    "dev": "gulp --require babel-register"
+    "build": "gulp build --production",
+    "dev": "gulp"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
-    "babel-register": "^6.26.0",
     "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
     "gulp-pug": "^4.0.1",
