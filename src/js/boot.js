@@ -2,13 +2,14 @@ import * as THREE from 'three'
 
 const skyColor = 0xdde8fd
 const groundColor = 0xd1daed
-const hemisPhereIntensity = 2.5
-const directionalColor = 0xfdf4dd
-const directionalIntensity = .3
+const hemisPhereIntensity = 2.2
+
+const directionalColor = 0xff5a00
+const directionalIntensity = .5
 const directionalLightPosition = {
   x: -2,
   y: 3,
-  z: -4,
+  z: -6,
 }
 
 
@@ -19,9 +20,9 @@ const createBootSzene = async () => {
       resolve(scene)
     })
   })
-  const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/SchiffSzene_Albedo.png')
-  const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzene_AO.png')
-  const bootSzeneRoughness = new THREE.TextureLoader().load('/assets3d/SchiffSzene_roughness.png')
+  const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/Atlas_color.png')
+  const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzene_AO.jpg')
+  const bootSzeneRoughness = new THREE.TextureLoader().load('/assets3d/Atlas_roughness.png')
 
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
