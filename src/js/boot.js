@@ -2,13 +2,13 @@ import * as THREE from 'three'
 
 const skyColor = 0xdde8fd
 const groundColor = 0xd1daed
-const hemisPhereIntensity = 2.1
+const hemisPhereIntensity = 2.5
 const directionalColor = 0xfdf4dd
-const directionalIntensity = .5
+const directionalIntensity = .3
 const directionalLightPosition = {
-  x: 5,
-  y: 1,
-  z: -10,
+  x: -2,
+  y: 3,
+  z: -4,
 }
 
 
@@ -19,13 +19,16 @@ const createBootSzene = async () => {
       resolve(scene)
     })
   })
-  const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/schiffDiffuseMap.png')
-  const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzeneAO.png')
+  const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/SchiffSzene_Albedo.png')
+  const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzene_AO.png')
+  const bootSzeneRoughness = new THREE.TextureLoader().load('/assets3d/SchiffSzene_roughness.png')
+
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
     aoMap: bootSzeneAO,
-    roughness: 0.8,
-    aoMapIntensity: 0.0,
+    roughnessMap: bootSzeneRoughness,
+    roughness: 1.0,
+    aoMapIntensity: 1.0,
   })
   scene.children.forEach(mesh => {
     mesh.material = material
@@ -47,7 +50,7 @@ const createBootSzene = async () => {
 
 
 export default async () => {
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000)
+  const camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000)
 
   const renderer = new THREE.WebGLRenderer({ alpha: true })
   renderer.setSize(window.innerWidth, window.innerWidth / 2)
@@ -57,9 +60,9 @@ export default async () => {
 
   let initialZ = 9.682811196058351
 
-  camera.position.x = 12  
+  camera.position.x = 15 
   camera.position.y = 4
-  camera.position.z = 12
+  camera.position.z = 15
   camera.rotation.y += .8
 
 
