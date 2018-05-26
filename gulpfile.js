@@ -17,12 +17,28 @@ md.use(mila, {
 
 const config = {
 	mode: yargs.argv.production ? 'production' : 'development',
-  entry: './main.js',
+  entry: ['babel-polyfill', './main.js'],
   output: {
     filename: './bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  context: path.resolve(__dirname, 'src/js/')
+  context: path.resolve(__dirname, 'src/js/'),
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets:[ 'es2015', 'stage-2' ]
+        }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  },
 }
 
 gulp.task('js', () => {
