@@ -2,14 +2,14 @@ import * as THREE from 'three'
 
 const skyColor = 0xdde8fd
 const groundColor = 0xd1daed
-const hemisPhereIntensity = 2.2
+const hemisPhereIntensity = 1.1
 
-const directionalColor = 0xff5a00
-const directionalIntensity = .5
+const directionalColor = 0xfaca8c
+const directionalIntensity = 1.0
 const directionalLightPosition = {
-  x: -2,
-  y: 3,
-  z: -6,
+  x: 1,
+  y: 1,
+  z: -3,
 }
 
 
@@ -38,10 +38,10 @@ const createBootSzene = async () => {
     map: bootSzeneTexture,
     aoMap: bootSzeneAO,
     roughnessMap: bootSzeneRoughness,
-    roughness: 1.0,
-    aoMapIntensity: 1.0,
+    roughness: 0.8,
+    aoMapIntensity: 1.2,
     envMap: bootEnvironment,
-    envMapIntensity: 1.0,
+    envMapIntensity: 2.0,
   })
   scene.children.forEach(mesh => {
     mesh.material = material
