@@ -31,13 +31,13 @@ const headsConfig = {
   domSelector: '#boot',
   camera: {
     position: {
-      x: 15,
-      y: 4,
-      z: 15
+      x: 0,
+      y: 0,
+      z: 1.5
     },
     rotation: {
       x: 0,
-      y: .8,
+      y: 0,
       z: 0
     }
   }
