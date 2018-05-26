@@ -6,12 +6,12 @@ const headsConfig = {
     hemiSphere: {    
       skyColor: 0xdde8fd,
       groundColor: 0xe0e2ff,
-      intensity: 0.9
+      intensity: 0.6
     },
 
     directional: {
       color: 0xf5f1e5,
-      intensity: 0.7,
+      intensity: 1.0,
       position: {
         x: 0.6,
         y: 1,
@@ -22,7 +22,7 @@ const headsConfig = {
   material: {
     map: loadTexture('/assets3d/Atlas_color.png'),
     roughnessMap: loadTexture('/assets3d/Atlas_roughness.png'),
-    roughness: 1.0,
+    roughness: 1.2,
     aoMapIntensity: 2.0,
     envMap: loadEnvironment('/assets3d/cubemaps/bluesky/'),
     envMapIntensity: 2.0
