@@ -33,6 +33,7 @@ export default async () => {
     },
     domSelector: '#boot',
     camera: {
+      perspective: 45,
       position: {
         x: 15,
         y: 4,
