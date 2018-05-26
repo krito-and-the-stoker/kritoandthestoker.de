@@ -27,8 +27,8 @@ const initializeNav = () => {
 	})
 }
 
-window.onload = () => {
+window.onload = async () => {
 	initializeNav()
-	boot()
-	heads()
+	await boot()
+	await heads()
 }
