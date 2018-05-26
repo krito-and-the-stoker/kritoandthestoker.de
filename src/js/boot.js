@@ -23,6 +23,16 @@ const createBootSzene = async () => {
   const bootSzeneTexture = new THREE.TextureLoader().load('/assets3d/Atlas_color.png')
   const bootSzeneAO = new THREE.TextureLoader().load('/assets3d/SchiffSzene_AO.jpg')
   const bootSzeneRoughness = new THREE.TextureLoader().load('/assets3d/Atlas_roughness.png')
+  const bootEnvironment = new THREE.CubeTextureLoader()
+    .setPath('/assets3d/cubemaps/bluesky/')
+    .load([
+      'posX.jpg',
+      'negX.jpg',
+      'posY.jpg',
+      'negY.jpg',
+      'posZ.jpg',
+      'negZ.jpg'
+    ])
 
   const material = new THREE.MeshStandardMaterial({
     map: bootSzeneTexture,
@@ -30,6 +40,8 @@ const createBootSzene = async () => {
     roughnessMap: bootSzeneRoughness,
     roughness: 1.0,
     aoMapIntensity: 1.0,
+    envMap: bootEnvironment,
+    envMapIntensity: 1.0,
   })
   scene.children.forEach(mesh => {
     mesh.material = material
