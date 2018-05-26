@@ -29,7 +29,7 @@ const headsConfig = {
   },
   domSelector: '#boot',
   camera: {
-    perspective: 45,
+    fieldOfView: 45,
     position: {
       x: 0,
       y: 0,

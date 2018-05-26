@@ -60,7 +60,7 @@ export const createRenderer = async (config) => {
 
 export const createCamera = (config) => {
   const domElement = document.querySelector(config.domSelector)
-  const camera = new THREE.PerspectiveCamera(config.camera.perspective, domElement.clientWidth/domElement.clientHeight, 0.1, 1000)
+  const camera = new THREE.PerspectiveCamera(config.camera.fieldOfView, domElement.clientWidth/domElement.clientHeight, 0.1, 1000)
   camera.position.x = config.camera.position.x
   camera.position.y = config.camera.position.y
   camera.position.z = config.camera.position.z
