@@ -5,25 +5,25 @@ const headsConfig = {
   light: {
     hemiSphere: {    
       skyColor: 0xdde8fd,
-      groundColor: 0xd1daed,
-      intensity: 1.1
+      groundColor: 0xe0e2ff,
+      intensity: 0.9
     },
 
     directional: {
-      color: 0xfaca8c,
-      intensity: 1.0,
+      color: 0xf5f1e5,
+      intensity: 0.7,
       position: {
-        x: 1,
+        x: 0.6,
         y: 1,
-        z: -3
+        z: 1
       }
     }
   },
   material: {
     map: loadTexture('/assets3d/Atlas_color.png'),
     roughnessMap: loadTexture('/assets3d/Atlas_roughness.png'),
-    roughness: 0.8,
-    aoMapIntensity: 1.2,
+    roughness: 1.0,
+    aoMapIntensity: 2.0,
     envMap: loadEnvironment('/assets3d/cubemaps/bluesky/'),
     envMapIntensity: 2.0
   },
