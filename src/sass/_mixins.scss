@@ -1,0 +1,10 @@
+@mixin aspectRatioCanvasContainer($ratio) {	
+	width: 100%;
+	padding-top: $ratio * 100%;
+	position: relative;
+	canvas {
+		top: 0;
+		width: 100%;
+		position: absolute;
+	}
+}

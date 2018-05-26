@@ -1,0 +1,11 @@
+#boot {
+	@include aspectRatioCanvasContainer(.5)
+}
+
+#krito {
+	@include aspectRatioCanvasContainer(1)
+}
+
+#heizer {
+	@include aspectRatioCanvasContainer(1)
+}

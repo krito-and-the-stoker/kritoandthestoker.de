@@ -1,8 +1,3 @@
-## Heizer
-
-
-![Heizer](/heizer.png)
-
 ##### 3D Grafiker & Designer
 Das ist der Heizer. Er beheizt die Grafikkarte mit 2D und 3D **Grafiken**. Ohne ihn hätten wir nur langweilige Tabellen. Er füllt unsere Spiele mit Leben. Mit viel Liebe zum Detail baut er ganze Welten auf, in denen man sich gerne verliert.
 

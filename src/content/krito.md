@@ -1,7 +1,3 @@
-## Krito
-
-![Krito](/Krito.png)
-
 ##### Coder & Musiker
 Das ist Krito. Er baut die **Mechanik** zusammen und sorgt dafür, dass unsere Spiele auf einem soliden Fundament gebaut werden. Er hat Mathematik studiert und ist erfahrener **Programmierer** und findet deswegen immer einen Weg, wie man denn die ganzen Ideen, die wir so haben, umsetzen kann.
 
