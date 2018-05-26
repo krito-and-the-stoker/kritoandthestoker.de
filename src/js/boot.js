@@ -7,9 +7,9 @@ export default async () => {
     scene: '/assets3d/bootSzene.json',
     light: {
       hemiSphere: {    
-        skyColor: 0xdde8fd,
+        skyColor: 0xc6daff,
         groundColor: 0xd1daed,
-        intensity: 1.1
+        intensity: 1.0
       },
 
       directional: {
@@ -18,7 +18,7 @@ export default async () => {
         position: {
           x: 1,
           y: 1,
-          z: -3
+          z: -5
         }
       }
     },
@@ -29,7 +29,7 @@ export default async () => {
       roughness: 0.8,
       aoMapIntensity: 1.2,
       envMap: loadEnvironment('/assets3d/cubemaps/bluesky/'),
-      envMapIntensity: 2.0
+      envMapIntensity: 2.1
     },
     domSelector: '#boot',
     camera: {
