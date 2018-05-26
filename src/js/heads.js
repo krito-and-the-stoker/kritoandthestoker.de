@@ -21,7 +21,6 @@ const headsConfig = {
   },
   material: {
     map: loadTexture('/assets3d/Atlas_color.png'),
-    aoMap: loadTexture('/assets3d/SchiffSzene_AO.jpg'),
     roughnessMap: loadTexture('/assets3d/Atlas_roughness.png'),
     roughness: 0.8,
     aoMapIntensity: 1.2,
@@ -30,6 +29,7 @@ const headsConfig = {
   },
   domSelector: '#boot',
   camera: {
+    perspective: 45,
     position: {
       x: 15,
       y: 4,
