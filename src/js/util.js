@@ -30,12 +30,21 @@ export const createDirectionalLight = config => {
   return light
 }
 
+export const assignMaterial = (scene, material) => {
+  const recursive = (mesh, fn) => {
+    fn(mesh)
+    mesh.children.forEach(mesh => recursive(mesh, fn))
+  }
+
+  recursive(scene, mesh => {
+    mesh.material = material
+  })
+}
+
 export const createScene = async (config) => {
   const scene = await loadScene(config.scene)
   const material = new THREE.MeshStandardMaterial(config.material)
-  scene.children.forEach(mesh => {
-    mesh.material = material
-  })
+  assignMaterial(scene, material)
   scene.add(createHemisphereLight(config.light.hemiSphere))
   scene.add(createDirectionalLight(config.light.directional))
 
