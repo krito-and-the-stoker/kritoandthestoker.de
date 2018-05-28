@@ -1,6 +1,6 @@
-##### 3D Grafiker & Designer
-Das ist der Heizer. Er beheizt die Grafikkarte mit 2D und 3D **Grafiken**. Ohne ihn hätten wir nur langweilige Tabellen. Er füllt unsere Spiele mit Leben. Mit viel Liebe zum Detail baut er ganze Welten auf, in denen man sich gerne verliert.
+##### Grafiker & Kunsthistoriker
+Das ist der Heizer. Er beheizt die Grafikkarte mit 2D und 3D **Grafiken**. Mit viel Liebe zum Detail baut er unsere **Welten** auf. Ohne Ihn gäbe es nur kalte Tabellen. Er kennt unseren Grafikmotor ganz genau und entlockt auch alten Geräten schönste Bilder.
 
-Aber er ist auch ein Experte für **Performance** und kennt seine Grafikkarte sehr genau. Deswegen berät er zusammen mit Krito, wie man die schöne Optik auch auf älteren oder mobilen Geräten umsetzen kann.
+Als studierter **Kunsthistoriker und Historiker** hat er ein ganz besonderen Blick für historische Inszenierungen, Details und Zusammenhänge. 
 
-Und das ist sein Portfolio: <http://fabiankampa.de>
+<http://fabiankampa.de>
