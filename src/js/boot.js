@@ -9,12 +9,12 @@ export default async () => {
       hemiSphere: {    
         skyColor: 0xc6daff,
         groundColor: 0xd1daed,
-        intensity: 1.1
+        intensity: 1.3
       },
 
       directional: {
         color: 0xfaca8c,
-        intensity: 1.1,
+        intensity: 1.4,
         position: {
           x: 1,
           y: 1,

@@ -5,14 +5,14 @@ export default async () => {
   const headsConfig = {
     light: {
       hemiSphere: {    
-        skyColor: 0xdde8fd,
-        groundColor: 0xe0e2ff,
-        intensity: 0.6
+        skyColor: 0xffffff,
+        groundColor: 0xfff2e0,
+        intensity: 0.7
       },
 
       directional: {
         color: 0xf5f1e5,
-        intensity: 1.0,
+        intensity: 1.1,
         position: {
           x: 0.6,
           y: 1,
