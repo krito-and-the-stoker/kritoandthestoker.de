@@ -2,6 +2,13 @@
 
 ![Americas](http://res.cloudinary.com/kritoandthestoker/image/upload/c_fill,g_center,h_400,w_800/v1526837947/americas.jpg)
 
-Dieses Projekt liegt uns sehr am Herzen und ist gleichzetig sehr ambitioniert. Die Grundidee basiert auf dem alten *Colonization* von *Bryan Reynolds* & *Sid Meier* aus dem Jahr 1994. Einige Mechaniken von diesem Urgestein sind natürlich hoffnungslos veraltet, aber das Spiel macht natürlich trotzdem noch sehr viel Spaß! Uns interessiert das grundsätzliche Szenario der Besiedlung Amerikas, insbesondere die Entdeckung der neuen Welt, die landwirtschaftliche Erschließung und den Aufbau einer neuen Gesellschaft finden wir sehr spannend. Hierfür haben wir schon eine ganze Reihe Ideen in der Hinterhand. Verraten wird natürlich noch nichts! Wer aber schon mal etwas sehen will, kann sich unseren ersten Protoyp einer Karte, auf der man Einheiten bewegen und Land erkunden kann, ansehen.
+Dieses Spiel liegt uns sehr am Herzen und ist gleichzeitig ziemlich ambitioniert. Gestartet ist das Projekt mit dem Ziel, ein Remake des herausragenden *Colonization* von 1994 zu entwickeln. 
 
-Link zum Pre-Alpha-Prototyp-Preview-noch-lange-nicht-fertig-aber-läuft-schon-mal: <https://americas.netlify.com/>
+Während der Entwicklung des ersten technischen Prototyps ist uns aber sonnenklar geworden, dass uns eine einfache Kopie niemals zufriedenstellen kann.
+
+Uns fasziniert das grundsätzliche Szenario der Besiedlung Amerikas. Die zentralen Themen der Erschließung einer "neuen" Welt, des Aufbaus von Gesellschaften aus Migration heraus, aber auch die Konflikte zwischen europäischen Einwanderern und der indigenen Bevölkerung finden wir absolut spannend und vor allem hochaktuell. Wir wollen strategische Grundkonzepte und Setting von *Colonization* in ein eigenständiges, neues Spielerlebnis überführen.
+
+Zurzeit befinden sich Krito und Heitzer unter Deck im Kartenraum und schieben sich eine neue Idee nach der anderen über den Konzeptionstisch!
+
+Wer sich den technischen Protypen aus dem Januar 2018 aber schon mal anschauen möchte, navigiert nach hier: <https://americas.netlify.com/>
+

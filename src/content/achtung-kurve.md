@@ -2,6 +2,8 @@
 
 ![Achtung Kurve](http://res.cloudinary.com/kritoandthestoker/image/upload/c_fill,h_400,w_800/v1526837933/achtung-kurve.png)
 
-Diese Neuauflage des alten Klassikers *Achtung, die Kurve!* ist ein kleines Nebenprojekt von uns und in erster Linie entstanden, weil wir nicht in der Lage waren, eine aktuelle Version des Spiels zu finden, das sich praktikabel installieren lässt und den Charme der Originalversion behalten hat. Deswegen haben wir eine Multiplayer-an-einem-Computer-Onlineversion erstellt, die man sofort und am besten mit mehrere Personen an einem Computer spielen kann. Ist wirklich unkompliziert!
+Diese Neuauflage des alten Klassikers *Achtung, die Kurve!* ist ein kleines Nebenprojekt von uns und mit der Absicht entstanden, eine online Version bereitzustellen, die dem reduzierten Charme des Originals treu bleibt. 
 
-Kurz anspielen: <http://achtungkurve.net>
+Mehrere Spieler versuchen, sich mit ihren bunten Linien den Weg zu kreuzen und sich gegenseitig einzufangen.
+
+ <http://achtungkurve.net>
