@@ -1,5 +1,5 @@
-# Wer wir sind?
-Wir zwei sind *Krito* und *Heizer*. Ein **Mathematiker und Entwickler** sowie ein **Kunsthistoriker und Grafiker**. 
-Und sind damit fast alles, was man braucht, um fantastische Videospiele zu entwickeln. Unser Herz schlägt für **kluge Strategiespiele**. Wir machen Videospiele die inhaltlich wertvoll, systematisch und fesselnd sind! Und für die man sich gerne an einem nassen Herbstabend auch mal mehr Zeit nimmt.
+# Wer wir sind
+Wir sind *Krito* und *Heizer*. Ein **Mathematiker/Entwickler** und ein **Kunsthistoriker/Grafiker**. 
+Wir sind alles, was es braucht, um fantastische Videospiele zu entwickeln. Unser Herz schlägt für **kluge Strategiespiele**. Wir machen Videospiele, die inhaltlich wertvoll, systematisch und fesselnd sind! Und in die man gerne für viele Stunden eintaucht.
 
-Wir wollen den Spieler in spannende historische Welten führen. In denen es nicht um die fleißige Jagt nach dem nächsten Achievment geht, sondern um die spielerische Auseinadersezung mit historischen, strategischen Systemen. Unsere zentraler Anspruch ist, Komplexität mit einem intuitiven Zugang und einer stimmungsvollen Welt zu vereinen.
+Wir führen die Spieler in spannende historische Welten. Uns geht es nicht um stumpfe Fleißarbeit und die Jagd nach dem nächsten Achievement geht, sondern um die spielerische Auseinandersetzung mit historischen Systemen. Unsere zentraler Anspruch ist es, Komplexität mit einem intuitiven Zugang und einer stimmungsvollen Welt zu vereinen.
