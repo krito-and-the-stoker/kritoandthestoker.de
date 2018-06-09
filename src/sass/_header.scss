@@ -7,5 +7,9 @@ header {
 		left: 0;
 		right: 0;
 		z-index: 1;
+		@include breakpoint(m) {
+			font-size: 8vw;
+			margin: 1vw;
+		}
 	}
 }

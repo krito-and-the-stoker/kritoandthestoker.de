@@ -3,6 +3,12 @@
 	width: 75vw;
 	max-width: 1200px;
 	margin: 0 auto;
+	@include breakpoint(m) {
+		width: 90vw;
+	}
+	@include breakpoint(s) {
+		width: 96vw;
+	}
 }
 
 .flex {
@@ -10,11 +16,21 @@
 	margin: 0;
 	margin-left: -$flex-margin;
 	margin-right: -$flex-margin;
+	@include breakpoint(m) {
+		flex-wrap: wrap;
+	}
 }
 
 .half {
 	width: calc(50% - #{2*$flex-margin});
 	margin: 0 $flex-margin;
+	@include breakpoint(m) {
+		width: 90vw;
+		margin: 0 auto;
+	}
+	@include breakpoint(s) {
+		width: 96vw;
+	}
 }
 
 .primary-1 {

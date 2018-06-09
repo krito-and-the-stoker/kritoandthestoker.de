@@ -8,3 +8,9 @@
 		position: absolute;
 	}
 }
+
+@mixin breakpoint($name) {
+	@media (max-width: #{map-get($breakpoints, $name)}px) {
+		@content
+	}
+}

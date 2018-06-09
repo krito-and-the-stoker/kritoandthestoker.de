@@ -4,6 +4,12 @@ body {
 	color: map-get($color, text);
 	font-family: Tahoma;
 	font-size: 18px;
+	@include breakpoint(m) {
+		font-size: 22px;
+	}
+	@include breakpoint(s) {
+		font-size: 20px;
+	}
 	line-height: 1.4;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -40,3 +46,4 @@ img {
 section {
 	margin-bottom: 160px;
 }
+
