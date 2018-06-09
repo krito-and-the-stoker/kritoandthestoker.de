@@ -8,7 +8,7 @@ Während der Entwicklung des ersten technischen Prototyps ist uns aber sonnenkla
 
 Uns fasziniert das grundsätzliche Szenario der Besiedlung Amerikas. Die zentralen Themen der Erschließung einer "neuen" Welt, des Aufbaus von Gesellschaften aus Migration heraus, aber auch die Konflikte zwischen europäischen Einwanderern und der indigenen Bevölkerung finden wir absolut spannend und vor allem hochaktuell. Wir wollen strategische Grundkonzepte und Setting von *Colonization* in ein eigenständiges, neues Spielerlebnis überführen.
 
-Zurzeit befinden sich Krito und Heitzer unter Deck im Kartenraum und schieben sich eine neue Idee nach der anderen über den Konzeptionstisch!
+Zurzeit befinden sich Krito und Heizer unter Deck im Kartenraum und schieben sich eine neue Idee nach der anderen über den Konzeptionstisch!
 
 Wer sich den technischen Protypen aus dem Januar 2018 aber schon mal anschauen möchte, navigiert nach hier: <https://americas.netlify.com/>
 
