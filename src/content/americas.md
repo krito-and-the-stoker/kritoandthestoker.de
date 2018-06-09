@@ -1,6 +1,6 @@
 ## Americas
 
-![Americas](http://res.cloudinary.com/kritoandthestoker/image/upload/c_fill,g_center,h_400,w_800/v1526837947/americas.jpg)
+[![Americas](http://res.cloudinary.com/kritoandthestoker/image/upload/c_fill,g_center,h_400,w_800/v1526837947/americas.jpg)](https://americas.netlify.com/)
 
 Dieses Spiel liegt uns sehr am Herzen und ist gleichzeitig ziemlich ambitioniert. Gestartet ist das Projekt mit dem Ziel, ein Remake des herausragenden *Colonization* von 1994 zu entwickeln. 
 
