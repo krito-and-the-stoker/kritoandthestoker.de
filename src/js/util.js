@@ -61,6 +61,8 @@ export const createRenderer = async (config) => {
   const domElement = document.querySelector(config.domSelector)
   renderer.setSize(domElement.clientWidth, domElement.clientHeight)
   domElement.appendChild(renderer.domElement)
+  domElement.querySelector('canvas').style.width = '100%';
+  domElement.querySelector('canvas').style.height = 'auto';
 
   const { scene, mixer } = await createScene(config)
 
