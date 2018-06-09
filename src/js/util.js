@@ -83,7 +83,7 @@ export const createCamera = (config) => {
   return camera
 }
 
-export const startRendering = ({ camera, scene, mixer, renderer }) => {
+export const startRendering = ({ timeScale }) => ({ camera, scene, mixer, renderer }) => {
   let deltaSeconds = 0
   let lastTime = 0
   const animate = function (time) {
@@ -93,7 +93,7 @@ export const startRendering = ({ camera, scene, mixer, renderer }) => {
       deltaSeconds = 0
     }
     lastTime = time
-    mixer.update(deltaSeconds)
+    mixer.update(timeScale * deltaSeconds)
     renderer.render(scene, camera)
 
     requestAnimationFrame(animate)

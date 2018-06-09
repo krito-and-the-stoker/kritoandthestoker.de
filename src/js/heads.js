@@ -41,7 +41,8 @@ export default async () => {
         y: 0,
         z: 0
       }
-    }
+    },
+    timeScale: 0.7,
   }
 
   const kritoConfig = {
@@ -66,7 +67,7 @@ export default async () => {
 
   const krito = await createRenderer(kritoConfig)
   const heizer = await createRenderer(heizerConfig)
-  startRendering(krito)
-  startRendering(heizer)
+  startRendering(kritoConfig)(krito)
+  startRendering(heizerConfig)(heizer)
 }
 

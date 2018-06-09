@@ -3,7 +3,7 @@ import { createRenderer, startRendering, loadTexture, loadEnvironment } from './
 
 
 export default async () => {
-  const stage = await createRenderer({
+  const config = {
     scene: '/assets3d/bootSzene.json',
     light: {
       hemiSphere: {    
@@ -44,8 +44,11 @@ export default async () => {
         y: .8,
         z: 0
       }
-    }
-  })
-  startRendering(stage)
+    },
+    timeScale: 1,
+  }
+  
+  const stage = await createRenderer(config)
+  startRendering(config)(stage)
 }
 
