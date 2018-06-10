@@ -36,11 +36,6 @@ export default async () => {
         y: 0,
         z: 1.5
       },
-      rotation: {
-        x: 0,
-        y: 0,
-        z: 0
-      }
     },
     timeScale: 0.7,
   }

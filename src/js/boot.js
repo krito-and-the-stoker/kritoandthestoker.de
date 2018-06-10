@@ -34,21 +34,71 @@ export default async () => {
     domSelector: '#boot',
     camera: {
       fieldOfView: 45,
-      position: {
-        x: 15,
-        y: 4,
-        z: 15
-      },
-      rotation: {
-        x: 0,
-        y: .8,
-        z: 0
-      }
     },
     timeScale: 1,
   }
-  
+
+  const interpolationConfig = {
+    from: {
+      position: {
+        x: 15,
+        y: 5,
+        z: 15
+      },
+      lookAt: {
+        x: -2,
+        y: 2,
+        z: 0
+      }
+    },
+    to: {
+      position: {
+        x: 15,
+        y: 0,
+        z: 15,
+      },
+      lookAt: {
+        x: -2,
+        y: 10,
+        z: 0,
+      },
+    },
+  }
+
+  const clamp = (delta, min = 0, max = 1) => Math.max(min, Math.min(delta, max))
+  const interpolate = (from, to, delta) => from + clamp(delta) * (to - from)
+  const interpolateEntries = (from, to, delta) => Object.entries(from)
+    .map(([key, value]) => [key, interpolate(value, to[key], delta)])
+    .reduce((obj, [key, value]) => ({ ...obj, [key]: value}), {})
+
   const stage = await createRenderer(config)
+
+  const updateInterpolation = () => {
+    const el = stage.renderer.domElement
+    const rect = el.getBoundingClientRect()
+    const height = rect.top - rect.bottom
+    const scrollY = rect.top
+    const relativeScroll = scrollY / height
+
+    const position = interpolateEntries(
+      interpolationConfig.from.position,
+      interpolationConfig.to.position,
+      relativeScroll)
+    const lookAt = interpolateEntries(
+      interpolationConfig.from.lookAt,
+      interpolationConfig.to.lookAt,
+      relativeScroll)
+
+    stage.camera.position.x = position.x
+    stage.camera.position.y = position.y
+    stage.camera.position.z = position.z
+
+    stage.camera.lookAt(lookAt.x, lookAt.y, lookAt.z)    
+  }
+
+  updateInterpolation()
+  window.addEventListener('scroll', updateInterpolation)
+
   startRendering(config)(stage)
 }
 
