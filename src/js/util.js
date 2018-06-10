@@ -57,7 +57,7 @@ export const createScene = async (config) => {
 
 export const createRenderer = async (config) => {
   const camera = createCamera(config)
-  const renderer = new THREE.WebGLRenderer({ alpha: true })
+  const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, })
   const domElement = document.querySelector(config.domSelector)
   renderer.setSize(domElement.clientWidth, domElement.clientHeight)
   domElement.appendChild(renderer.domElement)
