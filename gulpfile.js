@@ -22,6 +22,7 @@ const config = {
     filename: './bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'inline-source-map',
   context: path.resolve(__dirname, 'src/js/'),
   module: {
     rules: [
