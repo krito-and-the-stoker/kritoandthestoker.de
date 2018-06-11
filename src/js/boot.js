@@ -54,7 +54,7 @@ export default async () => {
     to: {
       position: {
         x: 15,
-        y: 0,
+        y: -0.45,
         z: 15,
       },
       lookAt: {
