@@ -1,0 +1,46 @@
+doctype html
+html(lang='de')
+  head
+    meta(
+      name='viewport'
+      content='width=device-width, initial-scale=1')
+    title Krito and the Stoker
+    link(
+      rel='stylesheet'
+      href='/style.css')
+  body
+    header
+      a.lang(href="/en.html") English
+      h1.brand Krito and the Stoker
+
+    #boot
+    .content
+      section#about
+        include:markdown ../content/de/about.md
+
+      section#team
+        h2 Das Team
+        .flex
+          .half
+            h2 Krito
+            #krito
+            include:markdown ../content/de/krito.md
+          .half
+            h2 Heizer
+            #heizer
+            include:markdown ../content/de/heizer.md
+
+      section#projects
+        h2 Die Projekte
+        .flex
+          .half
+            include:markdown ../content/de/achtung-kurve.md
+          .half
+            include:markdown ../content/de/americas.md
+
+      section#contact
+        include:markdown ../content/de/contact.md
+      section#imprint
+        include:markdown ../content/de/imprint.md
+
+    script(src="/bundle.js")
