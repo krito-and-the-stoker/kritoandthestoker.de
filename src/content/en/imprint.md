@@ -2,8 +2,8 @@
 
 #### Imprint according to $5 TMG
 
-	Krito and the Stoker GbR
-	Christoph Franke
+	Krito and the Stoker
 	Fabian Kampa
-	Vogelsangerstr. 193
-	50825 Köln
+	Christoph Franke
+	Zülpicher Straße 14
+	50674 Köln
