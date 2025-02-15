@@ -10,5 +10,7 @@ Zurzeit bereiten wir unseren Antrag auf Prototypenförderung bei der Film- und M
 
 Für unseren Prototyp planen wir, der *Javascript*-Welt den Rücken zu zukehren und ganz auf die *Unreal Engine* zu setzen. Und so eine lebendigere detailliertere Welt präsentieren zu können.
 
-Wer den aktuellen Stand des bisherigen Hobbyprojekts anspielen möchte navigiert nach hier: <https://play-americas.com/>
+Wer den aktuellen Stand des bisherigen Hobbyprojekts anspielen möchte navigiert nach hier:
+
+<https://play-americas.com/>
 

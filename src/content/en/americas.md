@@ -10,4 +10,6 @@ We are currently preparing our application for prototype funding from the Film a
 
 For our prototype, we plan to move away from the *Javascript* world entirely and fully embrace the *Unreal Engine*, allowing us to present a more vibrant and detailed world.
 
-If you’d like to try out the current state of our hobby project, head over to: <https://play-americas.com/>
+If you’d like to try out the current state of our hobby project, head over to:
+
+<https://play-americas.com/>
