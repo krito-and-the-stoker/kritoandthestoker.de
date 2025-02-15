@@ -1,0 +1,12 @@
+services:
+  kritoandthestoker:
+    build: .
+    working_dir: /app
+    volumes:
+      - ./src:/app/src
+      - ./dist:/app/dist
+    ports:
+      - "3000:3000"  # Change this if your app runs on a different port
+    command: ["yarn", "build"]
+    environment:
+      - NODE_ENV=development
