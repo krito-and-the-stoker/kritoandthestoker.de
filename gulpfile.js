@@ -1,12 +1,12 @@
 const gulp = require('gulp')
 const pug = require('gulp-pug')
-const sass = require('gulp-sass')
+// const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create()
 const md = require('markdown-it')({ html: true })
 const mila = require('markdown-it-link-attributes')
 const webpack = require('webpack')
 const path = require('path')
-const yargs = require('yargs')
+// const yargs = require('yargs')
 
 md.use(mila, {
   attrs: {
@@ -16,7 +16,8 @@ md.use(mila, {
 })
 
 const config = {
-	mode: yargs.argv.production ? 'production' : 'development',
+	// mode: yargs.argv.production ? 'production' : 'development',
+  mode: 'production',
   entry: ['babel-polyfill', './main.js'],
   output: {
     filename: './bundle.js',
@@ -45,8 +46,8 @@ const config = {
 gulp.task('js', () => {
   return new Promise(resolve => webpack(config, (err, stats) => {
     if (err) {
-			console.log('Webpack', err)    	
-    } 
+			console.log('Webpack', err)
+    }
 
     console.log(stats.toString({ /* stats options */ }))
     resolve()
@@ -63,7 +64,7 @@ gulp.task('static', () => {
 	return gulp.src('src/static/**/*')
 		.pipe(gulp.dest('dist'))
 })
- 
+
 gulp.task('pug', () => {
 	return gulp.src('src/pages/**/*.pug')
 		.pipe(pug({
@@ -81,7 +82,7 @@ gulp.task('pug', () => {
 
 gulp.task('sass', () => {
 	return gulp.src('src/sass/**/*.scss')
-		.pipe(sass()).on('error', swallowError)
+		// .pipe(sass()).on('error', swallowError)
 		.pipe(gulp.dest('dist'))
 		.pipe(browserSync.stream())
 })
